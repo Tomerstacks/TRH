@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="css/settings.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="sub-contain">
+            <div class="top-bar">
+                <img src="images/logoThicker.jpg" alt="Logo of TRH" class="logo">
+                <h1 class="header-title">TOSIM'S ROYALTY HOMES</h1>
+            </div>
+            <div class="nav-container container">
+                <nav class="navigation">
+                    
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#cta-container-tenant">Login</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container" id="container">
+        <div class="header">
+            <div>
+                <h2>Welcome Tenant</h2>
+                <p class="date"> 9th June, 2023</p>
+                <p class="title">Settings</p>
+            </div>
+            <div class="avatar-div">
+                <img src="/images/founder.png" alt="user avatar" class="user-avatar">
+                <a href="#"><img src="/icons/edit-icon.png" alt="edit button" class="edit-btn" data-info="avatar"></a>
+            </div>
+        </div>
+        <div class="settings-container">
+            <div class="settings-tabs">
+                <ul>
+                    <a href="#"><li>Subscription</li></a>
+                    <a href="#"><li>Activity</li></a>
+                    <a href="#" class="current-tab"><li>Personal Info</li></a>
+                    <a href="#"><li>Security</li></a> 
+                </ul>
+            </div>
+            <div class="settings-content">
+                <h3>Personal Information</h3>
+                <p>Change information pertaining to your personal identity.</p>
+                <form action="">
+                    <p> <span class="bold">Name:</span> Jand Bob Salvador <a><img src="/icons/edit-icon.png" alt="edit button" class="edit-btn" data-info="name" onclick="displayInput(event)"></a>&nbsp;</p>
+                    <div id="name-div" class="hidden">
+                        <input type="text" name="infoName" id="info-name"><button type="button" class="btn-primary btn-info">change</button>
+                    </div>
+                    <p> <span class="bold">Gender:</span> Male <a><img src="/icons/edit-icon.png" alt="edit button" class="edit-btn" data-info="gender" onclick="displayInput(event)"></a>&nbsp;</p>
+                    <div id="gender-div" class="hidden">
+                        <input type="text" name="infoGender" id="info-gender"><button type="button" class="btn-primary btn-info" >change</button>
+                    </div>
+                    <p> <span class="bold" >Email:</span> jandobador@gmail.com <a><img src="/icons/edit-icon.png" alt="edit button" class="edit-btn" data-info="email" onclick="displayInput(event)"></a>&nbsp;</p>
+                    <div id="email-div" class="hidden">
+                        <input type="text" name="infoEmail" id="info-email"><button type="button" class="btn-primary btn-info">change</button>
+                    </div>
+                    <p> <span class="bold">Phone:</span> +2349019164030 <a><img src="/icons/edit-icon.png" alt="edit button" class="edit-btn" data-info="phone" onclick="displayInput(event)"></a>&nbsp;</p>
+                    <div id="phone-div" class="hidden">
+                        <input type="text" name="infoPhone" id="info-phone"><button type="button" class="btn-primary btn-info">change</button>
+                    </div>
+                    <p> <span class="bold">Address:</span> 7, Thorborn Avenue, Adeniyi Jones, Ikeja, Lagos <a><img src="/icons/edit-icon.png" alt="edit button" class="edit-btn" data-info="address" onclick="displayInput(event)"></a>&nbsp;</p>
+                    <div id="address-div" class="hidden">
+                        <input type="text" name="infoAddress" id="info-address"><button type="button" class="btn-primary btn-info">change</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="btn-container">
+            <a href="#">
+                <div class="back-btn">
+                    <img src="/icons/prev-icon.png" alt="previous icon">
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        Copryight © 2023 Tosim’s Royalty Homes
+    </footer>
+    <script src="scripts/settings.js"></script>
+</body>
+</html>

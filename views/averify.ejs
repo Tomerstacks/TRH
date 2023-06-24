@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Form</title>
+    <link rel="stylesheet" href="css/averify.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="sub-contain">
+            <div class="top-bar">
+                <img src="images/logoThicker.jpg" alt="Logo of TRH" class="logo">
+                <h1 class="header-title">TOSIM'S ROYALTY HOMES</h1>
+            </div>
+            <div class="nav-container container">
+                <nav class="navigation">
+                    
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#cta-container-tenant">Login</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h2>Welcome Agent</h2>
+                <p class="date"> 9th June, 2023</p>
+                <p class="title">Validate Tenant</p>
+            </div>
+            <div class="avatar-div">
+                <img src="/images/founder.png" alt="user avatar" class="user-avatar">
+                <a href="#"><img src="/icons/edit-icon.png" alt="edit button" class="edit-btn"></a>
+            </div>
+        </div>
+        <div class="form-container">
+            <p>Use the information you gathered during investigation to check the data provided.</p>
+            <form action="">
+                <div class="form-input"> 
+                    <label for="guarant-name-input">Name</label>
+                    <input name="guarantNameInput" id="guarant-name-input" required>
+                </div>
+                <div class="form-input"> 
+                    <label for="utc-input">Unique Tenant Code (UTC)</label>
+                    <input name="utcInput" id="utc-input" required>
+                </div>
+                <div class="form-input"> 
+                    <label for="property-name-input">Name of property in subject</label>
+                    <textarea name="propertyNameInput" id="property-name-input" required></textarea>
+                </div>
+                <div class="drop-down-div">
+                    <label for="marriage-input">Marital Status</label>
+                    <select name="marriageInput" id="marriage-input" required>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                    </select>
+                </div>
+                <div class="form-input"> 
+                    <label for="address-input">Address</label>
+                    <textarea name="addressInput" id="address-input" required></textarea>
+                </div>
+                <div class="form-input"> 
+                    <label for="reason-input">Reason for leaving place of residence</label>
+                    <textarea name="reasonInput" id="reason-input" required></textarea></textarea>
+                </div>
+                <div class="drop-down-div">
+                    <label for="occupants-input">No of Occupants</label>
+                    <select name="occupantsInput" id="occupants-input" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="above 5">Above 5</option>
+                    </select>
+                </div>
+                <div class="drop-down-div">
+                    <label for="debts-input"><Datal>Debts</Datal></label>
+                    <select name="debtsInput" id="debts-input" required>
+                        <option value="none">None</option>
+                        <option value="owing">Owing</option>
+                    </select>
+                </div>
+                <div class="form-input"> 
+                    <label for="debt-amount-input">If owing, state amount in figures</label>
+                    <input name="debtAmountInput" id="debt-amount-input">
+                </div>
+                <div class="form-input"> 
+                    <label for="landlord-addr-input">Attach Evidence <span class="greyed">(receipts, invoices).</span> </label><span class="block greyed little">PDF only (max. 1Mb)</span>
+                    <input type="file" name="debt-evidence"> 
+                </div>
+                <div class="form-input"> 
+                    <label for="landlord-name-input">Name of Landlord</label>
+                    <input name="landlordNameInput" id="landlord-name-input">
+                </div>
+                <div class="form-input"> 
+                    <label for="landlord-phone-input">Phone</label>
+                    <input name="landlordPhoneInput" id="landlord-phone-input">
+                </div>
+                <div class="form-input"> 
+                    <label for="remarks-input">Landlord's remarks</label>
+                    <textarea name="remarksInput" id="remarks-input" required></textarea>
+                </div>
+                <div class="btn-grp">
+                    <button  type='button' class="btn btn-secondary">Save</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="btn-container">
+            <a>
+                <div class="back-btn">
+                    <img src="/icons/prev-icon.png" alt="previous icon">
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        Copryight © 2023 Tosim’s Royalty Homes
+    </footer>
+</body>
+</html>

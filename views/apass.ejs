@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRH-Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="sub-contain">
+            <div class="top-bar">
+                <img src="images/logoThicker.jpg" alt="Logo of TRH" class="logo">
+                <h1 class="header-title">TOSIM'S ROYALTY HOMES</h1>
+            </div>
+            <div class="nav-container container">
+                <nav class="navigation">
+                    
+                    <ul>
+                        <li><a href="/#">Home</a></li>
+                        <li><a href="/#cta-container-tenant" class="current-page">Login</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container form-container">
+        <div class="header">
+            <div class="header-icon">
+                <a href="#"><img src="/icons/back-arrow.png" alt="back-arrow" class="back-arrow"></a>
+            </div>
+            <div class="header-content">
+                <h2>Agent Login</h2>
+                <p class="lead">Continue with your password to login.</p>
+            </div>
+        </div>
+        <form action="apass" method="post">
+            <div id="form-input">
+                <div>
+                    <label for="password-input">Password</label>
+                    <input type="password" name="agentPassword" id="password-input" required  autocomplete="off">
+                </div>
+            </div>
+            <div class="redir-div">
+                <p> <a href="#" class="forgot-pass">Forgot Password?</a> </p>
+                <p>Not a user? <span> <a href="/asignup" class="redir">Sign Up!</a></span></p>
+            </div>
+            <button class="btn btn-primary" type="submit" id="submit-btn">Continue</button>
+        </form>
+    </div>
+    <footer>
+        Copryight © 2023 Tosim’s Royalty Homes
+    </footer>
+</body>
+</html>

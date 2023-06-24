@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Form</title>
+    <link rel="stylesheet" href="css/tverify.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="sub-contain">
+            <div class="top-bar">
+                <img src="images/logoThicker.jpg" alt="Logo of TRH" class="logo">
+                <h1 class="header-title">TOSIM'S ROYALTY HOMES</h1>
+            </div>
+            <div class="nav-container container">
+                <nav class="navigation">
+                    
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#cta-container-tenant">Login</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h2>Welcome Tenant</h2>
+                <p class="date"> 9th June, 2023</p>
+                <p class="title">Verification Form (Section A)</p>
+            </div>
+            <div class="avatar-div">
+                <img src="/images/founder.png" alt="user avatar" class="user-avatar">
+                <a href="#"><img src="/icons/edit-icon.png" alt="edit button" class="edit-btn"></a>
+            </div>
+        </div>
+        <div class="form-container">
+            <form action="">
+                <div class="form-input">
+                    <label for="surname-input">Surname</label>
+                    <input type="text" id="surname-input" name="surnameInput" required>
+                </div>
+                <div class="form-input">
+                    <label for="names-input">Other Names</label>
+                    <input type="text" id="names-input" name="namesInput" required>
+                </div>
+                <div class="form-input"> 
+                    <label for="address-input">Address</label>
+                    <textarea name="addressInput" id="address-input" required></textarea>
+                </div>
+                <div class="form-input">
+                    <label for="nationality-input">Nationality</label>
+                    <input type="text" id="nationality-input" name="nationalityInput" required>
+                </div>
+                <div class="form-input">
+                    <label for="lgvt-input">Local Government</label>
+                    <input type="text" id="lgvt-input" name="lgvtInput" required>
+                </div>
+                <div class="form-input">
+                    <label for="sorigin-input">State of Origin</label>
+                    <input type="text" id="sorigin-input" name="soriginInput" required>
+                </div>
+                <div class="form-input">
+                    <label for="passno-input">Passport No. <span class="greyed">(if not nigerian)</span></label>
+                    <input type="text" id="passno-input" name="passnoInput" required>
+                </div>
+                <div class="form-input">
+                    <label for="town-input">Town / Village</label>
+                    <input type="text" id="town-input" name="townInput" required>
+                </div>
+                <div class="radio-div">
+                    <p>Sex</p>
+                    <div class="input-radio">
+                        <input type="radio" name="sexInput" id="male" value="male" required>
+                        <label for="sex">Male</label>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="sexInput" id="female" value="female" required>
+                        <label for="sex">Female</label>
+                    </div>
+                </div>
+                <div class="drop-down-div">
+                    <label for="maritalStatus-input">Marital Status</label>
+                    <select name="maritalStatus" id="maritalStatus-input" required>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                    </select>
+                </div>
+                <div class="btn-grp">
+                    <button  type='button' class="btn btn-secondary">Prev</button>
+                    <button type="submit" class="btn btn-primary">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="btn-container">
+            <a>
+                <div class="back-btn">
+                    <img src="/icons/prev-icon.png" alt="previous icon">
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        Copryight © 2023 Tosim’s Royalty Homes
+    </footer>
+</body>
+</html>

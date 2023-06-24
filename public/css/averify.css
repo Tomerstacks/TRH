@@ -1,0 +1,284 @@
+body{
+    margin: 0;
+    background-image: url("/images/landing-page-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #2D3648;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .top-bar{
+        height: 200px;
+        width: 100%;
+        background-color: #CEB6DA;
+        margin: 6.25rem  auto 0 auto;
+        display: flex;
+        /* border: 2px solid white; */
+        /* flex-direction: row; */
+        /* justify-content: center; */
+    }
+    .logo{
+        max-height: 300px;
+        margin: 0 0;
+        display: inline;
+        /* border: 1px solid white; */
+        align-self: center;
+        /* justify-content: center; */
+    
+    }
+    .header-container{
+        width: 100%;
+        margin-top: 0;
+        padding-top: 0;
+        margin: 0 auto;
+        /* border: 1px solid white; */
+        padding-bottom: 1.25rem    ;
+    }
+    .sub-contain{
+        width: 75%;
+        margin: 0 auto;
+    }
+    .header-title{
+        color: white;
+        font-size: 3.3rem !important;
+        font-family: serif;
+        display: inline;
+        margin: 0;
+        padding: 0;
+        /* border: 1px solid white; */
+        justify-content: center;
+        align-self: center;
+        text-shadow: 0.3125rem 0.3125rem 0.3125rem #A5A3A3;
+    }
+    nav ul{
+        display: flex;
+        font-size: 1.4rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        color: white;
+        text-decoration: none; 
+        /* border: 2px white solid; */
+        justify-content: space-between;
+        margin-top: 1.875rem;
+        
+    }
+    nav a{
+        color: inherit;
+        text-decoration: none;
+    }
+    nav a:hover{
+        padding: 0.3215rem 0.3215rem;
+        background-color: #CFB4DD;
+        text-shadow: 0.125rem 0.125rem 0.125rem #A5A3A3;
+    }
+    .current-page{
+        border-bottom: 0.1875rem solid white;
+        padding-bottom: 0.3215rem;
+    }
+    nav a:active{
+        border-bottom: 0.1875rem solid white;
+        padding: 0.3215rem 0.3215rem;
+        background-color: #CFB4DD;
+    }
+    nav a:current{
+        border-bottom: 0.1875rem solid white;
+        padding: 0.3125rem 0.3125rem;
+        background-color: #CFB4DD;
+    }
+    nav li{
+        list-style: none;
+        color: white;
+        text-decoration: none;
+    }
+    nav{
+        width: 45%;
+    }
+    .nav-container{
+        margin-top: 0;
+        display: flex;
+        justify-content: right;
+    }
+
+    .container{
+        width:86%;
+        /* border: 2px solid white; */
+        margin: 0 auto;
+        /* text-align: center; */
+    }
+    .title{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .header{
+        width:65%;
+        /* border: 2px black solid; */
+        margin: 5rem  auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-right: 0; */
+    }
+    .date{
+        font-size: 1.5rem;
+        font-weight: 700;
+        /* margin-top: 70px; */
+    }
+    
+    .current-tab{
+        font-weight:bolder;
+    }
+    .user-avatar{
+        width: 80%;
+        /* border: 2px solid black; */
+    }
+    .bold{
+        font-weight: bold;
+    }
+    footer{
+        /* width: 100%; */
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #CEB6DA;
+        color: #FFFFFF;
+        font-size: 1.4rem;
+        text-shadow: 0.125rem 0.125rem 0.125rem #A5A3A3;
+        margin-top: 0;
+    }
+    .back-btn{
+        width: 65px;
+        height: 65px;
+        border-radius: 100%;
+        border: 1px solid #A5A3A3;
+        display:  flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0.125rem 0.125rem 0.125rem #A5A3A3;
+    }
+    .back-btn:hover{
+        width: 70px;
+        height: 70px;
+    }
+    .btn-container{
+        width: 65%;
+        margin: 0 auto 3.125rem auto;
+    }
+.form-container{
+    width: 65%;
+    /* border: 2px black solid; */
+    margin: 0 auto;
+}
+input{
+    padding: 1.25rem 0 1.25rem 0.625rem;
+    margin-top: 0.9375rem;
+    border-radius: 0.3125rem;
+    display: block;
+    width: 99%;
+    font-size: 1.2rem;
+    /* border-color: #A5A3A3; */
+    border: 2px solid #A5A3A3;
+    font:inherit
+}
+input:focus{
+    outline:2px solid #CEB6DA;
+}
+.btn{
+    padding:1.25rem 70px;
+    border-radius:5px;
+    border: none;
+    font-size: 1.25rem;
+    margin: 3.125rem 0 2.5rem 0;
+    font-weight: bold;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn-primary{
+    color: white;
+    background-color: #2D3648;
+    padding: 1.375rem 4.375rem;
+}
+.btn-secondary{
+    background-color: transparent;
+    border: 2px solid #2D3648;
+    color: #2D3648;
+    margin: 0 1.25rem;
+}
+.btn-grp{
+    text-align: end;
+}
+textarea{
+    width: 98%;
+    height: 150px;
+    border: 2px solid #A5A3A3;
+    border-radius: 5px;
+    margin-top: 0.9375rem;
+    padding: 0.625rem 0.625rem;
+    font-size: 1.2rem;
+    word-spacing: normal;
+    color: #2D3648;
+}
+textarea:focus{
+    outline: 2px solid #CEB6DA;
+}
+.form-input{
+    margin-top: 0.5rem;
+}
+input[type='radio']{
+    width: fit-content;
+    display: inline-block;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+    accent-color:#CEB6DA;
+    /* outline: 2px solid #CEB6DA; */
+}
+.radio-div p{
+    margin-bottom: 0;
+}
+.drop-down-div{
+    margin-top: 0.9375rem;
+}
+select{
+    padding: 1.25rem 6.25rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    color: #2D3648;
+    display:block;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.9375rem;
+    background-color: white;
+    font-family: inherit;
+    border: 2px solid #A5A3A3;
+}
+select:focus{
+    outline: 2px solid #CEB6DA;
+}
+select option{
+    padding: 1.25rem 6.25rem !important;
+    border: 2px solid #CEB6DA;
+}
+a:hover{
+    cursor: pointer;
+}
+.sub-title{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.input-radio{
+    display: inline-block;
+    margin-right: 1.25rem;
+}
+.greyed{
+    color: #5C6371;
+}
+.block{
+    display: block;
+}
+.little{
+    font-size: 1.1rem;
+}
+

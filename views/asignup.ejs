@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRH-SignUp</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="sub-contain">
+            <div class="top-bar">
+                <img src="images/logoThicker.jpg" alt="Logo of TRH" class="logo">
+                <h1 class="header-title">TOSIM'S ROYALTY HOMES</h1>
+            </div>
+            <div class="nav-container container">
+                <nav class="navigation">
+                    
+                    <ul>
+                        <li><a href="/#">Home</a></li>
+                        <li><a href="/#cta-container-tenant">Login</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container form-container">
+        <h2>Agent &nbsp;SignUp</h2>
+        <p class="lead">Register with your email and password to get started.</p>
+        <form action="asignup" method="post">
+            <div class="form-input">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name-input" required placeholder="John" autocomplete="off">
+            </div>
+            <div class="form-input">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name-input" required placeholder="Doe" autocomplete="off">
+            </div>
+            <div class="form-input">
+                <label for="phone-input">Phone</label>
+                <input type="text" name="phone" id="phone-input" required autocomplete="off">
+            </div>
+            <div class="form-input">
+                <label for="email-input">Email</label>
+                <input type="email" name="email" id="email-input" required placeholder="someone@example.com" autocomplete="off">
+            </div>
+            <div class="form-input">
+                <label for="password-input">Password</label>
+                <input type="password" name="password" id="password-input" required  autocomplete="off" placeholder="8 characters min - numbers, symbols and letters">
+            </div>
+            <div class="form-input">
+                <label for="confirm-password-input">Confirm Password</label>
+                <input type="password" name="confirm-password" id="confirm-password-input" required  autocomplete="off">
+            </div>
+            <p>Already a user? <span ><a href="/alogin" class="redir">Login!</a></span></p>
+            <button class="btn btn-primary" type="submit" id="submit-btn">Continue</button>
+        </form>
+    </div>
+    <footer>
+        Copryight © 2023 Tosim’s Royalty Homes
+    </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRH-Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="sub-contain">
+            <div class="top-bar">
+                <img src="images/logoThicker.jpg" alt="Logo of TRH" class="logo">
+                <h1 class="header-title">TOSIM'S ROYALTY HOMES</h1>
+            </div>
+            <div class="nav-container container">
+                <nav class="navigation">
+                    
+                    <ul>
+                        <li><a href="/#">Home</a></li>
+                        <li><a href="/#cta-container-tenant" class="current-page">Login</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container form-container">
+        <h2>Agent Login</h2>
+        <p class="lead">Continue with your email to login.</p>
+        <form action="alogin" method="post">
+            <div id="form-input">
+                <label for="email-input">Email</label>
+                <input type="email" name="agentEmail" id="email-input" required placeholder="agent@example.com" autocomplete="off">
+            </div>
+            <button class="btn btn-primary" type="submit" id="submit-btn">Continue</button>
+        </form>
+    </div>
+    <footer>
+        Copryight © 2023 Tosim’s Royalty Homes
+    </footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+body{
+    margin: 0;
+    background-image: url("/images/landing-page-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #2D3648;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .top-bar{
+        height: 200px;
+        width: 100%;
+        background-color: #CEB6DA;
+        margin: 6.25rem  auto 0 auto;
+        display: flex;
+        /* border: 2px solid white; */
+        /* flex-direction: row; */
+        /* justify-content: center; */
+    }
+    .logo{
+        max-height: 300px;
+        margin: 0 0;
+        display: inline;
+        /* border: 1px solid white; */
+        align-self: center;
+        /* justify-content: center; */
+    
+    }
+    .header-container{
+        width: 100%;
+        margin-top: 0;
+        padding-top: 0;
+        margin: 0 auto;
+        /* border: 1px solid white; */
+        padding-bottom:     1.25rem    ;
+    }
+    .sub-contain{
+        width: 75%;
+        margin: 0 auto;
+    }
+    .header-title{
+        color: white;
+        font-size: 3.3rem !important;
+        font-family: serif;
+        display: inline;
+        margin: 0;
+        padding: 0;
+        /* border: 1px solid white; */
+        justify-content: center;
+        align-self: center;
+        text-shadow: 0.3125rem 0.3125rem 0.3125rem #A5A3A3;
+    }
+    nav ul{
+        display: flex;
+        font-size: 1.4rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        color: white;
+        text-decoration: none; 
+        /* border: 2px white solid; */
+        justify-content: space-between;
+        margin-top: 1.875rem;
+        
+    }
+    nav a{
+        color: inherit;
+        text-decoration: none;
+    }
+    nav a:hover{
+        padding: 0.3125rem 0.3125rem;
+        background-color: #CFB4DD;
+        text-shadow: 0.125rem 0.125rem 0.125rem #A5A3A3;
+    }
+    .current-page{
+        border-bottom: 0.1875rem solid white;
+        padding-bottom: 0.3125rem;
+    }
+    nav a:active{
+        border-bottom: 0.1875rem solid white;
+        padding: 0.3125rem 0.3125rem;
+        background-color: #CFB4DD;
+    }
+    nav a:current{
+        border-bottom: 0.1875rem solid white;
+        padding: 0.3125rem 0.3125rem;
+        background-color: #CFB4DD;
+    }
+    nav li{
+        list-style: none;
+        color: white;
+        text-decoration: none;
+    }
+    nav{
+        width: 45%;
+    }
+    .nav-container{
+        margin-top: 0;
+        display: flex;
+        justify-content: right;
+    }
+
+    .container{
+        width:86%;
+        /* border: 2px solid white; */
+        margin: 0 auto;
+        /* text-align: center; */
+    }
+    .title{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .header{
+        width:65%;
+        /* border: 2px black solid; */
+        margin: 5rem  auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-right: 0; */
+    }
+    .date{
+        font-size: 1.5rem;
+        font-weight: 700;
+        /* margin-top: 70px; */
+    }
+    
+    .settings-tabs{
+        width: 25%;
+        margin: 0 auto;
+        padding: 0;
+        /* border: 2px solid black; */
+    }
+
+    .settings-tabs ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .settings-tabs li{
+        margin: 0.9375rem 0 0.9375rem 0;
+  
+    }
+    .settings-tabs a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .current-tab{
+        font-weight:bolder;
+    }
+    .user-avatar{
+        width: 80%;
+        /* border: 2px solid black; */
+    }
+    .settings-container{
+        display: flex;
+        width: 65%;
+        justify-content: center;
+        /* border: 2px solid #A5A3A3; */
+        margin: 0 auto 1.25rem auto;
+    }
+    .settings-content{
+        /* border: 2px solid black; */
+        width: 75%;
+    }
+    .settings-content h3{
+        font-size: 1.9rem;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    footer{
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #CEB6DA;
+        color: #FFFFFF;
+        font-size: 1.4rem;
+        text-shadow: 0.125rem 0.125rem 0.125rem #A5A3A3;
+        margin-top: 0;
+    }
+    .back-btn{
+        width: 65px;
+        height: 65px;
+        border-radius: 100%;
+        border: 2px solid #A5A3A3;
+        display:  flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0.125rem 0.125rem 0.125rem #A5A3A3;
+    }
+    .back-btn:hover{
+        width: 70px;
+        height: 70px;
+    }
+    .btn-container{
+        width: 65%;
+        margin: 0 auto 3.125rem auto;
+    }
+    /* .edit-btn{
+        border: 1px solid black;
+    } */
+
+    .factor-btn{
+        padding: 1.25rem 4.375rem;
+        background-color: #2D3648;
+        color: white;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 5px;
+        margin-top: 1.875rem;
+    }
+    .sub-title{
+        font-weight: bold;
+    }
+   .btn{
+    padding: 1.25rem 4.375rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+   }
+   .btn-primary{
+    background-color: #2D3648;
+    color: white;
+   }
+   .btn:hover{
+    cursor: pointer;
+   }
+   .form-input{
+    margin-top: 0.5rem;
+}
+.greyed{
+    color: #5C6371;
+}
+input{
+    padding: 0.9375 0 0.9375 1.875rem;
+    margin-top: 0.9375rem;
+    border-radius: 5px;
+    display: block;
+    width: 55%;
+    font-size: 1.2rem;
+    /* border-color: #A5A3A3; */
+    border: 2px solid #A5A3A3;
+    font:inherit;
+    color: inherit;
+}
+input:focus{
+    outline: 2px solid #CEB6DA;
+}
+.space{
+     margin-bottom: 1.875rem;
+}
+.password-btn{
+    min-width: 31%;   
+}
+.hidden{
+    display: none;
+}
+.btn-info{
+    padding:0.625rem 1.25rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: inherit;
+    margin-top: 1.875rem;
+}
+.btn-info:hover{
+    cursor: pointer;
+}
+a:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="css/settings.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="sub-contain">
+            <div class="top-bar">
+                <img src="images/logoThicker.jpg" alt="Logo of TRH" class="logo">
+                <h1 class="header-title">TOSIM'S ROYALTY HOMES</h1>
+            </div>
+            <div class="nav-container container">
+                <nav class="navigation">
+                    
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#cta-container-tenant">Login</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h2>Welcome Tenant</h2>
+                <p class="date"> 9th June, 2023</p>
+                <p class="title">Settings</p>
+            </div>
+            <div class="avatar-div">
+                <img src="/images/founder.png" alt="user avatar" class="user-avatar">
+                <a href="#"><img src="/icons/edit-icon.png" alt="edit button" class="edit-btn"></a>
+            </div>
+        </div>
+        <div class="settings-container">
+            <div class="settings-tabs">
+                <ul>
+                    <a href="#"><li>Subscription</li></a>
+                    <a href="#"><li>Activity</li></a>
+                    <a href="#"><li>Personal Info</li></a>
+                    <a href="#" class="current-tab"><li>Security</li></a> 
+                </ul>
+            </div>
+            <div class="settings-content">
+                <h3>Security</h3>
+                <p class="sub-title">Change Password</p>
+                <p> ********&nbsp<a><img src="/icons/edit-icon.png" alt="edit button" class="edit-btn" data-info="pass" onclick="displayInput(event)"></a>&nbsp;</p>
+                <div class="hidden" id="pass-div">   
+                    <form action="">
+                        <div class="form-input">
+                            <label for="old-pass-input">Old password</label>
+                            <input type="password" id="old-pass-input" name="oldPassInput" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="new-pass-input">New password</label>
+                            <input type="password" id="new-pass-input" name="newPassInput" required>
+                        </div>
+                        <div class="form-input space">
+                            <label for="confirm-pass-input">Confirm password</label>
+                            <input type="password" id="confirm-pass-input" name="confirmPassInput" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary password-btn">Change</button>
+                    </form>
+                </div>
+                <p class="sub-title">Two-factor Authentication</p>
+                <p>Use two-factor authentication every time you want to login.</p>
+                <button class="btn btn-primary">Enable Now</button>
+            </div>
+        </div>
+        <div class="btn-container">
+            <a href="#">
+                <div class="back-btn">
+                    <img src="/icons/prev-icon.png" alt="previous icon">
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        Copryight © 2023 Tosim’s Royalty Homes
+    </footer>
+    <script src="scripts/settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Form</title>
+    <link rel="stylesheet" href="css/tverify.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="sub-contain">
+            <div class="top-bar">
+                <img src="images/logoThicker.jpg" alt="Logo of TRH" class="logo">
+                <h1 class="header-title">TOSIM'S ROYALTY HOMES</h1>
+            </div>
+            <div class="nav-container container">
+                <nav class="navigation">
+                    
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#cta-container-tenant">Login</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h2>Welcome Tenant</h2>
+                <p class="date"> 9th June, 2023</p>
+                <p class="title">Verification Form (Section B)</p>
+            </div>
+            <div class="avatar-div">
+                <img src="/images/founder.png" alt="user avatar" class="user-avatar">
+                <a href="#"><img src="/icons/edit-icon.png" alt="edit button" class="edit-btn"></a>
+            </div>
+        </div>
+        <div class="form-container">
+            <form action="">
+                <div class="form-input"> 
+                    <label for="desire-input">Desired Improvement</label>
+                    <textarea name="desireInput" id="desire-input" required></textarea>
+                </div>
+                <div class="drop-down-div">
+                    <label for="factor-input">What factor influenced your interest in the property?</label>
+                    <select name="factor-input" id="factor-input" required>
+                        <option value="size">Size</option>
+                        <option value="Pricing">Pricing</option>
+                        <option value="physical location">Physical Location</option>
+                        <option value="environment">Environment</option>
+                        <option value="drivers license">Others</option>
+                    </select>
+                </div>
+                <div class="radio-div">
+                    <p>Do you keep pets?</p>
+                    <div class="input-radio">
+                        <input type="radio" name="petsInput" id="keepsPets" value="yes" required>
+                        <label for="pets">Yes</label>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="petsInput" id="keepsPets" value="No" required>
+                        <label for="pets">no</label>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="pet-kind-input">If yes, what kind?</label>
+                    <input type="text" id="pet-kind-input" name="petKindInput">
+                </div>
+                <div class="drop-down-div">
+                    <label for="vehicles-input">No. of Vehicles Owned</label>
+                    <select name="vehicles-input" id="vehicles-input" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4 and above</option>
+                        <option value="0">None</option>
+                    </select>
+                </div>
+                <div class="form-input"> 
+                    <label for="salary-input">Salary Per Annum</label>
+                    <input name="salaryInput" id="salary-input" required>
+                </div>
+                <div class="form-input"> 
+                    <label for="init-budget-input">Initial Rent / Budget for Desired Location</label>
+                    <input name="initBudgetInput" id="init-budget-input" required>
+                </div>
+                <div class="form-input"> 
+                    <label for="sponsor-input">Person Responsible for Rent Payment</label>
+                    <input name="sponsorInput" id="sponsor-input" required>
+                </div>
+                <div class="form-input"> 
+                    <label for="current-resaddr-input">Current Residential Address</label>
+                    <textarea name="currentResaddrInput" id="current-resaddr-input" required></textarea>
+                </div>
+                <div class="btn-grp">
+                    <button type="button" class="btn btn-primary">Prev</button>
+                    <button  type='button' class="btn btn-secondary">Save</button>
+                    <button type="submit" class="btn btn-primary">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="btn-container">
+            <a>
+                <div class="back-btn">
+                    <img src="/icons/prev-icon.png" alt="previous icon">
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        Copryight © 2023 Tosim’s Royalty Homes
+    </footer>
+</body>
+</html>
