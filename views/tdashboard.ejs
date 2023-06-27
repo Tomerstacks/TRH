@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tenant Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/dashboard.css">
 
 </head>
@@ -32,8 +35,8 @@
     <div class="container">
         <div class="header">
             <div>
-                <h2>Welcome</h2>
-                <p class="date"> 9th June, 2023</p>
+                <h2>Welcome <%= tenantFname %> </h2>
+                <p class="date"> <%= date %> </p>
                 <p class="title">Your dashboard</p>
             </div>
             <div class="avatar-div">
@@ -78,7 +81,7 @@
                 
             </div>
             <div>
-                <a href="#" class="no-decor">
+                <a href="/tverify" class="no-decor">
                     <div class="board flex">
                         <div class="board-icon flex">
                             <img src="/icons/form.png" alt="icon for form">
@@ -89,7 +92,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="no-decor">
+                <a href="uniquepage" class="no-decor">
                     <div class="board flex">
                         <div class="board-icon flex">
                             <img src="/icons/code.png" alt="icon for history">
@@ -100,14 +103,15 @@
                         </div>
                     </div>
                 </a>
-                <div>
+                <!-- <div>
                     <a href="#" class="no-decor submit-btn">
-                        <a href="#" class="no-decor"><span class="btn btn-primary">Run Check    </span></a>
+                        <a href="/app" class="no-decor"><span class="btn btn-primary">Run Check </span></a>
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
+    <p><a href="/logout" class="logout">Logout</a></p>
     <footer>
         Copryight © 2023 Tosim’s Royalty Homes
     </footer>

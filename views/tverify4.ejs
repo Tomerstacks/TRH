@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verification Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/tverify.css">
 </head>
 <body>
@@ -18,11 +21,11 @@
                 <nav class="navigation">
                     
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#cta-container-tenant">Login</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/#">Home</a></li>
+                        <li><a href="/#cta-container-tenant">Login</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#contact">Contact</a></li>
                     </ul>
 
                 </nav>
@@ -33,8 +36,8 @@
     <div class="container">
         <div class="header">
             <div>
-                <h2>Welcome Tenant</h2>
-                <p class="date"> 9th June, 2023</p>
+                <h2>Welcome <%= tenantFname %></h2>
+                <p class="date"> <%= date %> </p>
                 <p class="title">Verification Form (Section B)</p>
             </div>
             <div class="avatar-div">
@@ -43,14 +46,14 @@
             </div>
         </div>
         <div class="form-container">
-            <form action="">
+            <form action="tverify4" method="post">
                 <div class="form-input"> 
                     <label for="occupants-input">No of intended occupants</label>
                     <input name="occupantsInput" id="occupants-input" required>
                 </div>
                 <div class="drop-down-div">
                     <label for="religion-input">Religion</label>
-                    <select name="religion-input" id="religion-input" required>
+                    <select name="religionInput" id="religion-input" required>
                         <option value="christianity">Chistianity</option>
                         <option value="islam">Islam</option>
                         <option value="others">Others</option>
@@ -62,7 +65,7 @@
                 </div>
                 <div class="form-input"> 
                     <label for="rel-leader-input">Name of Pastor / Imam</label>
-                    <input name="relLeaderInput" id="rel-leader-input" required>
+                    <input name="leaderInput" id="leader-input" required>
                 </div>
                 <div class="form-input"> 
                     <label for="worship-addr-input">Place of Worship</label>
@@ -87,7 +90,7 @@
                 </div>
                 <div class="form-input"> 
                     <label for="landlord-addr-input">Reasons for leaving place of Residence</label>
-                    <textarea name="landlordAddrInput" id="landlord-addr-input" required></textarea>
+                    <textarea name="leaveReason" id="leave-reason" required></textarea>
                 </div>
                 <div class="radio-div">
                     <p>Debts Owed?</p>
@@ -106,21 +109,21 @@
                 </div>
                 <div class="form-input"> 
                     <label for="landlord-addr-input">Attach Evidence <span class="greyed">(receipts, invoices).</span> </label><span class="block greyed little">PDF only (max. 1Mb)</span>
-                    <input type="file" name="debt-evidence"> 
+                    <input type="file" name="evidence"> 
                 </div>
                 <div class="form-input"> 
                     <label for="landlord-addr-input">Remarks about previous place of residence</label>
-                    <textarea name="landlordAddrInput" id="landlord-addr-input" required></textarea>
+                    <textarea name="remarksPrevious" id="remarks-previous" required></textarea>
                 </div>
                 <div class="btn-grp">
-                    <button type="button" class="btn btn-primary">Prev</button>
-                    <button  type='button' class="btn btn-secondary">Save</button>
-                    <button type="submit" class="btn btn-primary">Next</button>
+                    <button type="button" class="btn btn-secondary"> <a href="/tverify3">Prev</a></button>
+                    <button  type='button' class="btn btn-secondary hidden">Save</button>
+                    <button type="submit" class="btn btn-primary"> Next</button>
                 </div>
             </form>
         </div>
         <div class="btn-container">
-            <a>
+            <a href="/tdashboard">
                 <div class="back-btn">
                     <img src="/icons/prev-icon.png" alt="previous icon">
                 </div>

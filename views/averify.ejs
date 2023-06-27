@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verification Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/averify.css">
 </head>
 <body>
@@ -18,11 +21,11 @@
                 <nav class="navigation">
                     
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#cta-container-tenant">Login</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/#">Home</a></li>
+                        <li><a href="/#cta-container-tenant">Login</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#contact">Contact</a></li>
                     </ul>
 
                 </nav>
@@ -33,8 +36,8 @@
     <div class="container">
         <div class="header">
             <div>
-                <h2>Welcome Agent</h2>
-                <p class="date"> 9th June, 2023</p>
+                <h2>Welcome <%= agentFname %></h2>
+                <p class="date"> <%= date %> </p>
                 <p class="title">Validate Tenant</p>
             </div>
             <div class="avatar-div">
@@ -44,10 +47,10 @@
         </div>
         <div class="form-container">
             <p>Use the information you gathered during investigation to check the data provided.</p>
-            <form action="">
+            <form action="averify" method="post">
                 <div class="form-input"> 
-                    <label for="guarant-name-input">Name</label>
-                    <input name="guarantNameInput" id="guarant-name-input" required>
+                    <label for="tenant-name-input">Name</label>
+                    <input name="tenantNameInput" id="guarant-name-input" required>
                 </div>
                 <div class="form-input"> 
                     <label for="utc-input">Unique Tenant Code (UTC)</label>
@@ -97,7 +100,7 @@
                 </div>
                 <div class="form-input"> 
                     <label for="landlord-addr-input">Attach Evidence <span class="greyed">(receipts, invoices).</span> </label><span class="block greyed little">PDF only (max. 1Mb)</span>
-                    <input type="file" name="debt-evidence"> 
+                    <input type="file" name="evidence"> 
                 </div>
                 <div class="form-input"> 
                     <label for="landlord-name-input">Name of Landlord</label>
@@ -118,7 +121,7 @@
             </form>
         </div>
         <div class="btn-container">
-            <a>
+            <a href="/adashboard">
                 <div class="back-btn">
                     <img src="/icons/prev-icon.png" alt="previous icon">
                 </div>

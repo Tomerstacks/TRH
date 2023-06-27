@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verification Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/tverify.css">
 </head>
 <body>
@@ -18,11 +21,11 @@
                 <nav class="navigation">
                     
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#cta-container-tenant">Login</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/#">Home</a></li>
+                        <li><a href="/#cta-container-tenant">Login</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#contact">Contact</a></li>
                     </ul>
 
                 </nav>
@@ -33,8 +36,8 @@
     <div class="container">
         <div class="header">
             <div>
-                <h2>Welcome Tenant</h2>
-                <p class="date"> 9th June, 2023</p>
+                <h2>Welcome <%= tenantFname %></h2>
+                <p class="date"> <%= date %> </p>
                 <p class="title">Verification Form (Section B)</p>
             </div>
             <div class="avatar-div">
@@ -43,14 +46,14 @@
             </div>
         </div>
         <div class="form-container">
-            <form action="">
+            <form action="tverify3" method="post">
                 <div class="form-input"> 
                     <label for="desire-input">Desired Improvement</label>
                     <textarea name="desireInput" id="desire-input" required></textarea>
                 </div>
                 <div class="drop-down-div">
                     <label for="factor-input">What factor influenced your interest in the property?</label>
-                    <select name="factor-input" id="factor-input" required>
+                    <select name="factorInput" id="factor-input" required>
                         <option value="size">Size</option>
                         <option value="Pricing">Pricing</option>
                         <option value="physical location">Physical Location</option>
@@ -75,7 +78,7 @@
                 </div>
                 <div class="drop-down-div">
                     <label for="vehicles-input">No. of Vehicles Owned</label>
-                    <select name="vehicles-input" id="vehicles-input" required>
+                    <select name="vehiclesInput" id="vehicles-input" required>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -89,7 +92,7 @@
                 </div>
                 <div class="form-input"> 
                     <label for="init-budget-input">Initial Rent / Budget for Desired Location</label>
-                    <input name="initBudgetInput" id="init-budget-input" required>
+                    <input name="budgetInput" id="init-budget-input" required>
                 </div>
                 <div class="form-input"> 
                     <label for="sponsor-input">Person Responsible for Rent Payment</label>
@@ -100,14 +103,14 @@
                     <textarea name="currentResaddrInput" id="current-resaddr-input" required></textarea>
                 </div>
                 <div class="btn-grp">
-                    <button type="button" class="btn btn-primary">Prev</button>
-                    <button  type='button' class="btn btn-secondary">Save</button>
-                    <button type="submit" class="btn btn-primary">Next</button>
+                    <button type="button" class="btn btn-secondary"> <a href="/tverify2">Prev</a></button>
+                    <button  type='button' class="btn btn-secondary hidden">Save</button>
+                    <button type="submit" class="btn btn-primary"> Next</button>
                 </div>
             </form>
         </div>
         <div class="btn-container">
-            <a>
+            <a href="/tdashboard">
                 <div class="back-btn">
                     <img src="/icons/prev-icon.png" alt="previous icon">
                 </div>

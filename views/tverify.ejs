@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verification Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/tverify.css">
 </head>
 <body>
@@ -18,11 +21,11 @@
                 <nav class="navigation">
                     
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#cta-container-tenant">Login</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/#">Home</a></li>
+                        <li><a href="/#cta-container-tenant">Login</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#contact">Contact</a></li>
                     </ul>
 
                 </nav>
@@ -33,8 +36,8 @@
     <div class="container">
         <div class="header">
             <div>
-                <h2>Welcome Tenant</h2>
-                <p class="date"> 9th June, 2023</p>
+                <h2>Welcome <%= tenantFname %></h2>
+                <p class="date"> <%= date %> </p>
                 <p class="title">Verification Form (Section A)</p>
             </div>
             <div class="avatar-div">
@@ -43,7 +46,7 @@
             </div>
         </div>
         <div class="form-container">
-            <form action="">
+            <form action="tverify" method="post">
                 <div class="form-input">
                     <label for="surname-input">Surname</label>
                     <input type="text" id="surname-input" name="surnameInput" required>
@@ -96,13 +99,13 @@
                     </select>
                 </div>
                 <div class="btn-grp">
-                    <button  type='button' class="btn btn-secondary">Prev</button>
+                    <!-- <button  type='button' class="btn btn-secondary">Prev</button> -->
                     <button type="submit" class="btn btn-primary">Next</button>
                 </div>
             </form>
         </div>
         <div class="btn-container">
-            <a>
+            <a href="/tdashboard">
                 <div class="back-btn">
                     <img src="/icons/prev-icon.png" alt="previous icon">
                 </div>

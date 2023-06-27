@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/settings.css">
+
+ 
 </head>
 <body>
     <header class="header-container">
@@ -21,11 +23,11 @@
                 <nav class="navigation">
                     
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#cta-container-tenant">Login</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/#">Home</a></li>
+                        <li><a href="/#cta-container-tenant">Login</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#contact">Contact</a></li>
                     </ul>
 
                 </nav>
@@ -36,7 +38,7 @@
     <div class="container" id="container">
         <div class="header">
             <div>
-                <h2>Welcome <%= tenantFname %></h2>
+                <h2>Welcome <%= agentFname %></h2>
                 <p class="date"> <%= date %> </p>
                 <p class="title">Settings</p>
             </div>
@@ -82,7 +84,7 @@
             </div>
         </div>
         <div class="btn-container">
-            <a href="/tdashboard">
+            <a href="/adashboard">
                 <div class="back-btn">
                     <img src="/icons/prev-icon.png" alt="previous icon">
                 </div>

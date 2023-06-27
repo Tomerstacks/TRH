@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -122,21 +125,21 @@
                 <div>
                     <p>Welcome to Tosim's Royalty Homes, a web-based landlord-tenant database application that aims to streamline communication and record-keeping between landlords and tenants. Our platform is designed to make property management simpler, more efficient, and more transparent for everyone involved.</p>
                     <p> At Tosim's Royalty Homes, we believe that managing rental properties should be stress-free and easy for landlords, tenants and agents. We know that managing properties can be challenging, but we believe that technology can make it easier. </p>
-                    <p class="hidden">That's why we developed a user-friendly and secure web-based application that helps landlords and tenants communcate more effectively and manage their properties more efficientl.</p>
-                    <p class="hidden">our mission is to provide the best-in-class technology and service to simlify the property managment process, increase transparency, and create a better rental experience for all parties involved. We strive to dvelop  innovative tools that help landlords  and tenants interact in a more effective and streamlined way. By making the rental process more fficient, we a aim to save time and money for landlords, while also providing tenants with an easier and more transparent renting experience. We understand the challenges of managing rental properties, and we're committed to creating a platform that makes the process easier for everyone.</p>
-                    <p class="hidden">At Tosim's Royalty Homes, we're dedicated to providing exceptional customer service and support. We're always here to ehlp with any questions or issues you may have, and we're constantly working to improve our platform and services to better  meet your needs.</p>
-                    <p class="hidden">Thank you for choosing Tosim's Royalty Homes, as your landlord-tenant database application We're excited to help you streamline your property managment and create a better rental experience for you and your tenenats.</p>
-                    <p><a href="" class="extend" id="extend-about">Read more...</a></p>
+                    <p class="hidden" id="line1">That's why we developed a user-friendly and secure web-based application that helps landlords and tenants communcate more effectively and manage their properties more efficientl.</p>
+                    <p class="hidden" id="line2">our mission is to provide the best-in-class technology and service to simlify the property managment process, increase transparency, and create a better rental experience for all parties involved. We strive to dvelop  innovative tools that help landlords  and tenants interact in a more effective and streamlined way. By making the rental process more fficient, we a aim to save time and money for landlords, while also providing tenants with an easier and more transparent renting experience. We understand the challenges of managing rental properties, and we're committed to creating a platform that makes the process easier for everyone.</p>
+                    <p class="hidden" id="line3">At Tosim's Royalty Homes, we're dedicated to providing exceptional customer service and support. We're always here to ehlp with any questions or issues you may have, and we're constantly working to improve our platform and services to better  meet your needs.</p>
+                    <p class="hidden" id="line4">Thank you for choosing Tosim's Royalty Homes, as your landlord-tenant database application We're excited to help you streamline your property managment and create a better rental experience for you and your tenenats.</p>
+                    <p><a class="extend" id="extend-about" onclick="extendAbout()">Read more...</a></p>
                 </div>
             </div>
             <div class="founder-div">
                 <p class="title">Meet the Founder</p>
-                <img src="/images/founder.png" alt="Image of the founder">
+                <img src="/images/founder2.jpg" alt="Image of the founder" class="founderImg">
                 <div>
                     <p>Meet Adebajo Ebun! She is a visionary entrepreneur who recognized the need for innovation in the property management industry and created our web-based landlord-tenant database application.  </p>
                     <p>With a background in real estate and a passion for technology, she has always been interested in finding ways to simplify complex processes and improve the customer experience. <span>Her experience as a landlord and property manager gave her first-hand knowledge of the challenges faced by both landlords and tenants.</span> </p>
-                    <p class="hidden">Driven by a desire to make a positive impact in the industry, she founded our company with the mission of developing a web-based application that would streamline communication and record-keeping, improve tenant selection processes, and provide a more transparent and user-friendly experience for both landlords and tenants.</p>
-                    <p><a href="" class="extend" id="extend-founder">Read more...</a></p>
+                    <p class="hidden" id="line5">Driven by a desire to make a positive impact in the industry, she founded our company with the mission of developing a web-based application that would streamline communication and record-keeping, improve tenant selection processes, and provide a more transparent and user-friendly experience for both landlords and tenants.</p>
+                    <!-- <p><a class="extend" id="extend-founder">Read more...</a></p> -->
                 </div>
             </div>
             <div class="contact-div" id="contact">
@@ -156,8 +159,20 @@
                 </form>
             </div>
         </div>
-       
+        <script>
+            
 
+            function extendAbout(){
+                let tobeClicked= document.getElementById('extend-about')
+                document.getElementById('line1').style.display='inline'
+                document.getElementById('line2').style.display='inline'
+                document.getElementById('line3').style.display='inline'
+                document.getElementById('line4').style.display='inline'
+                tobeClicked.style.display='none'
+            }
+
+                
+        </script>
         <footer>Copryight © 2023 Tosim’s Royalty Homes </footer>
         <script src="scripts/index.js"></script>
         <script src="https://kit.fontawesome.com/78f706be8e.js" crossorigin="anonymous"></script>

@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tenant Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/dashboard.css">
 
 </head>
@@ -19,11 +22,11 @@
                 <nav class="navigation">
                     
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#cta-container-tenant">Login</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/#">Home</a></li>
+                        <li><a href="/#cta-container-tenant">Login</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#contact">Contact</a></li>
                     </ul>
 
                 </nav>
@@ -34,8 +37,8 @@
     <div class="container">
         <div class="header">
             <div>
-                <h2>Welcome Agent</h2>
-                <p class="date"> 9th June, 2023</p>
+                <h2>Welcome <%= agentFname %></h2>
+                <p class="date"> <%= date %> </p>
                 <p class="title">Your dashboard</p>
             </div>
             <div class="avatar-div">
@@ -51,42 +54,42 @@
                         </div>
                         <div class="board-content">
                             <p class="board-title">History</p>
-                            <p> Review your history with tenancy and agents.</p>
+                            <p class="content"> Review your history with tenancy and agents.</p>
                         </div>
                     </div>
                 </a>  
-                <a href="#" class="no-decor">
+                <a href="/ainfo" class="no-decor">
                     <div class="board flex">
                         <div class="board-icon flex">
                             <img src="/icons/settings.png" alt="icon for history">
                         </div>
                         <div class="board-content">
                             <p class="board-title">Settings</p>
-                            <p>Tweak your settings to suit your needs.</p>
+                            <p class="content">Tweak your settings to suit your needs.</p>
                         </div>
                     </div>
                 </a>    
             </div>
             <div>
-                <a href="#" class="no-decor">
+                <a href="/averify" class="no-decor">
                     <div class="board flex">
                         <div class="board-icon flex">
                             <img src="/icons/form.png" alt="icon for history">
                         </div>
                         <div class="board-content">
                             <p class="board-title">Verification Status / Forms</p>
-                            <p>Verify your tenancy status.</p>
+                            <p class="content">Verify your tenancy status.</p>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="no-decor">
+                <a href="/acare" class="no-decor">
                     <div class="board flex">
                         <div class="board-icon flex">
                             <img src="/icons/phone.png" alt="icon for history">
                         </div>
                         <div class="board-content">
                             <p class="board-title">Customer Service</p>
-                            <p>Reach out to any of our customer care agents.</p>
+                            <p class="content">Reach out to any of our customer care agents.</p>
                         </div>
                     </div>
                 </a>
@@ -95,9 +98,10 @@
     </div>
     <div class="btn-container">
         <a href="#" class="no-decor">
-            <a href="#" class="no-decor"><span class="btn btn-primary">Run Check</span></a>
+            <a href="/app" class="no-decor"><span class="btn btn-primary">Run Check</span></a>
         </a>
     </div>
+    <p><a href="/logout" class="logout">Logout</a></p>
     <footer class="footer-agent">
         Copryight © 2023 Tosim’s Royalty Homes
     </footer>

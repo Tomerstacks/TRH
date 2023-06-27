@@ -6,7 +6,7 @@ body{
     color: #2D3648;
     font-size: 1.4rem;
     line-height: 2rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Cantarell', sans-serif;
 }
 .top-bar{
     height: 200px;
@@ -54,7 +54,7 @@ body{
 nav ul{
     display: flex;
     font-size: 1.4rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Cantarell', sans-serif;    
     font-weight: 700;
     color: white;
     text-decoration: none; 

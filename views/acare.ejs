@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verification Form</title>
+    <title>Customer Care</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/care.css">
+
 </head>
 <body>
     <header class="header-container">
@@ -19,6 +20,7 @@
             </div>
             <div class="nav-container container">
                 <nav class="navigation">
+                    
                     <ul>
                         <li><a href="/#">Home</a></li>
                         <li><a href="/#cta-container-tenant">Login</a></li>
@@ -35,43 +37,37 @@
     <div class="container">
         <div class="header">
             <div>
-                <h2>Welcome User</h2>
-                <p class="date"> <%= date %> </p>
-                <p class="title">Validate Tenant</p>
+                <h2>Welcome <%= agentFname %></h2>
+                <p class="date"> <%= date %></p>
+                <p class="title">Customer Service</p>
             </div>
             <div class="avatar-div">
                 <img src="/images/founder.png" alt="user avatar" class="user-avatar">
                 <a href="#"><img src="/icons/edit-icon.png" alt="edit button" class="edit-btn"></a>
             </div>
         </div>
-        <div class="form-container">
-            <form action="app" method="post">
-                <p>Run a validation check on your clients with their unique tenant code provided</p>
-                <div class="app-container">
-                    <input type="text" name="utcInput" id="utc-input">
+        <div class="service-container">
+           <p>Speak with our customer care representatives.</p>
+           <div class="content-grp">
+            <img src="/icons/phone.png" alt="phone icon" class="icon">
+                <div>
+                    <p>+2349019164035</p>
+                    <p>+2349031640039</p>
                 </div>
-                <button type="submit" class="btn btn-primary">Run Check</button>  
-                <div class="details" id="details-div">
-                    <p>Status: <span class="status"> <%= status%> </span> </p> 
-                    <!-- <p><a href="">See more details</a></p> -->
-                    <div class="">
-                        <p>Finance: <span class="amountOwed"> <%= debt %> Owed</span> </p>
-                        <!-- <p>Damages: <span>Cleared</span> </p> -->
-                        <!-- <p>Tenant's reputation <span>Positive</span></p> -->
-                        <!-- <p>Property: <span class="property"></span></p> -->
-                        <p>Name of Tenant: <span> <%= tenant %> </span></p>
-                    </div>
-                </div>  
-                
-            </form>
+           </div>
+           <p class="sub-title">Get email responses in less that 24 hours</p>
+           <div class="content-grp">
+            <img src="icons/email.png" alt="email icon" class="icon">
+                <div>
+                    <p>info@thr.com</p>
+                    <p>enquiries@thr.com</p>
+                </div>
+           </div>
         </div>
         <div class="btn-container">
+            <a href="/adashboard">
                 <div class="back-btn">
-                    <a href="/adashboard">
-
-                        <img src="/icons/prev-icon.png" alt="previous icon">
-
-                    </a>
+                    <img src="/icons/prev-icon.png" alt="previous icon">
                 </div>
             </a>
         </div>
