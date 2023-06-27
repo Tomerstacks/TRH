@@ -1146,7 +1146,7 @@ app.post('/app', function(req, resp){
             console.log(clientSide)
             console.log(agentSide)
 
-            if(clientSide.verificationForm4.debtAmount === agentSide.debtAmount){
+            if(clientSide.verificationForm4.debtsAmount === agentSide.debtAmount){
                 console.log('Cleared')
                 // req.body.utcInput= targetUtc
                 resp.render('app', {debt: 'Nothing', tenant: agentSide.tenantName, status: 'Cleared', date:day})
