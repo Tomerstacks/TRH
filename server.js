@@ -714,12 +714,14 @@ app.post('/tlogin', function(req, resp){
                     const foundUser= await tenant.findOne({email: tenantEmail})
                     // console.log(foundUser)
                     console.log('User exists')
+                    console.log(foundUser)
 
                     foundUserEmail=foundUser.email
                     foundUserPass=foundUser.password
 
                     if(foundUser){
                         resp.redirect('/tpass') 
+                        console.log('i am reaching here!')
                         
 
                         app.post('/tpass', function(req, resp){
