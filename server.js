@@ -721,20 +721,20 @@ app.post('/tlogin', function(req, resp){
 
                     if(foundUser){
                         resp.redirect('/tpass') 
-                        console.log('i am reaching here!')
                         
-
+                        
                         app.post('/tpass', function(req, resp){
-
+                            
                             logginPass=req.body.tenantPassword
-
+                            
                             if(logginPass===foundUserPass){
                                 console.log('user authenticated')
-
-
+                                
+                                
                                 loggedInUser=foundUser.email
                                 loggedInUserName=foundUser.firstName
                                 resp.redirect('/tdashboard')
+                                console.log('i am reaching here!')
 
 
                                 app.get('/tverify', function(req, resp){
