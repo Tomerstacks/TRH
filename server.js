@@ -720,12 +720,14 @@ app.post('/tlogin', function(req, resp){
                     foundUserPass=foundUser.password
 
                     if(foundUser){
-                        resp.redirect('/tpass') 
                         
+                        resp.redirect('/tpass') 
+                        console.log('fail one')
                         
                         app.post('/tpass', function(req, resp){
                             
                             logginPass=req.body.tenantPassword
+                            console.log('fail two!')
                             
                             if(logginPass===foundUserPass){
                                 console.log('user authenticated')
@@ -734,7 +736,6 @@ app.post('/tlogin', function(req, resp){
                                 loggedInUser=foundUser.email
                                 loggedInUserName=foundUser.firstName
                                 resp.redirect('/tdashboard')
-                                console.log('i am reaching here!')
 
 
                                 app.get('/tverify', function(req, resp){
