@@ -1038,10 +1038,11 @@ app.post('/alogin', function(req, resp){
 
                     const foundUser= await agent.findOne({email: agentEmail})
 
-                    foundUserEmail=foundUser.email
-                    foundUserPass=foundUser.password
+                    
                     
                     if(foundUser){
+                        foundUserEmail=foundUser.email
+                        foundUserPass=foundUser.password
                         console.log("User found")
                         resp.render('apass') 
                         loggedInAgentName=foundUser.firstName
@@ -1113,6 +1114,7 @@ app.post('/alogin', function(req, resp){
 
                         })
                     }else{
+                        resp.redirect('/alogin')
                         console.log("User not registered")
                     }
    
